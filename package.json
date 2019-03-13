@@ -4,6 +4,10 @@
   "main": "index.js",
   "author": "aereal <aereal@aereal.org>",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "jest"
+  },
   "devDependencies": {
     "@types/jest": "^24.0.11",
     "jest": "^24.5.0",
