@@ -15,9 +15,10 @@ export const formatDSN = (config: GoSqlDriverConfig): string => {
 
   if (net) {
     dsn += net
-    if (addr) {
-      dsn += `(${addr})`
-    }
+  }
+
+  if (addr) {
+    dsn += `(${addr})`
   }
 
   dsn += `/${dbName}`
