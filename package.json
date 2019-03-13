@@ -1,6 +1,6 @@
 {
   "name": "@aereal/go-dsn",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "author": "aereal <aereal@aereal.org>",
