@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc -p .",
+    "clean": "rm -rf src/**/*.js src/**/*.d.ts",
     "test": "jest"
   },
   "devDependencies": {
