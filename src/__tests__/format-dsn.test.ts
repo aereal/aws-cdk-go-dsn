@@ -34,6 +34,15 @@ describe("formatDSN", () => {
     ).toBe("unix(/tmp/mysql.sock)/test-db")
   })
 
+  test("with addr", () => {
+    expect(
+      formatDSN({
+        addr: "/tmp/mysql.sock",
+        dbName: "test-db",
+      })
+    ).toBe("(/tmp/mysql.sock)/test-db")
+  })
+
   test("with parameters", () => {
     expect(
       formatDSN({
