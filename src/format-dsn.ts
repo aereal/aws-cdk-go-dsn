@@ -31,11 +31,7 @@ export const formatDSN = (config: GoSqlDriverConfig): string => {
     const sortedKeys = Object.keys(rest).sort((a, b) =>
       a === b ? 0 : a < b ? -1 : 1
     ) as RestKeysList
-    for (const k of sortedKeys) {
-      const key = k
-      const value = rest[key]
-      dsn += `${key}=${value}`
-    }
+    dsn += sortedKeys.map(k => `${k}=${rest[k]}`).join("&")
   }
 
   return dsn
