@@ -47,8 +47,9 @@ describe("formatDSN", () => {
     expect(
       formatDSN({
         charset: "utf8mb4",
+        collation: "utf8mb4_bin",
         dbName: "test-db",
       })
-    ).toBe("/test-db?charset=utf8mb4")
+    ).toBe("/test-db?charset=utf8mb4&collation=utf8mb4_bin")
   })
 })
