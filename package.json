@@ -8,6 +8,7 @@
   "scripts": {
     "build": "tsc -p .",
     "clean": "rm -rf src/**/*.js src/**/*.d.ts",
+    "prepublish": "run-s clean build",
     "test": "jest"
   },
   "devDependencies": {
