@@ -5,6 +5,9 @@
   "types": "src/index.d.ts",
   "author": "aereal <aereal@aereal.org>",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsc -p .",
     "clean": "rm -rf src/**/*.js src/**/*.d.ts",
